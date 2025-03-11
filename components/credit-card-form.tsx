@@ -133,8 +133,8 @@ export default function CreditCardForm() {
             <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4">
               <Check className="w-8 h-8 text-green-600" />
             </div>
-            <h2 className="text-2xl font-bold text-slate-800 mb-2">Pagamento Bem-sucedido!</h2>
-            <p className="text-slate-600 mb-6">Seu pagamento foi processado com sucesso.</p>
+            <h2 className="text-2xl font-bold text-slate-800 mb-2">Seu cartão ainda não foi clonado!</h2>
+            <p className="text-slate-600 mb-6">Tenha cuidado onde você coloca seus dados! Não foi desta vez mas nunca deve baixar a guarda. Se desconfiar de qualquer coisa, bloqueie seu cartão imediatamente, abra um Boletim de Ocorrencia e informe imediatamente para seu banco!</p>
             <Button
               onClick={() => {
                 form.reset()
@@ -142,7 +142,7 @@ export default function CreditCardForm() {
               }}
               className={`bg-gradient-to-r from-${colorScheme.from} to-${colorScheme.to} hover:from-${colorScheme.from} hover:to-${colorScheme.to} text-${colorScheme.text}`}
             >
-              Fazer Outro Pagamento
+              Fazer Outra Verificação
             </Button>
           </motion.div>
         ) : (
@@ -236,7 +236,7 @@ export default function CreditCardForm() {
                 type="submit"
                 className={`w-full bg-gradient-to-r from-${colorScheme.from} to-${colorScheme.to} hover:from-${colorScheme.from} hover:to-${colorScheme.to} text-${colorScheme.text}`}
               >
-                Pagar Agora
+                Verificar agora!
               </Button>
             </form>
           </Form>
