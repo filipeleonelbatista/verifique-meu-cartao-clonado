@@ -157,6 +157,7 @@ export default function CreditCardForm() {
                     <FormControl>
                       <div className="relative">
                         <Input
+                          inputmode="numeric"
                           placeholder="1234 5678 9012 3456"
                           {...field}
                           onChange={(e) => {
